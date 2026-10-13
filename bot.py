@@ -8,7 +8,8 @@ from aiogram import Bot, Dispatcher, types
 # =====================================================================
 # 1. SECURITY CONFIGURATION
 # =====================================================================
-TOKEN = "8681009675:AAHZkKsX-6W_r2zsWd5BciH8e7XXcMjKrmo"
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
